@@ -33,7 +33,7 @@ def musik():
             if notes:
                 notes[-1] = (notes[-1][0], notes[-1][1] + duration)  # Extend the duration of the previous note
 
-    # 播放音乐
+    # play musik
     for freq, dur in notes:
         winsound.Beep(freq, dur)
         time.sleep(0.015)  # Short intervals make the melody more coherent
